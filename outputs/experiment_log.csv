@@ -1,0 +1,6 @@
+experiment_id,model,features,oof_rmse,public_score,private_score,submission_file,notes
+exp001,XGBoost GPU,"domain interactions + count + OOF target encoding",0.056995,0.05581,0.05608,outputs/submission_xgb_gpu_fe.csv,"Long 6000-round version overfit"
+exp002,XGBoost GPU Short,"domain interactions + count + OOF target encoding",0.056755,0.05568,0.05592,outputs/submission_xgb_gpu_fe_short.csv,"1400 rounds, better leaderboard"
+exp003,LightGBM GPU,"domain interactions + count + OOF target encoding",0.056135,0.05574,0.05595,outputs/submission_lgbm_gpu_fe.csv,"Best OOF among TE models but weaker leaderboard"
+exp004,CatBoost GPU,"native categorical domain interactions",0.056101,0.05564,0.05589,outputs/submission_cat_gpu_fe.csv,"Best single model leaderboard"
+exp005,Cat/XGB/LGBM Blend,"80% CatBoost + 10% XGB + 10% LGBM",0.056087,0.05563,0.05588,outputs/submission_cat80_lgbm10_xgb10.csv,"Best final submission"

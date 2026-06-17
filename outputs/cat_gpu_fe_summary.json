@@ -1,0 +1,59 @@
+{
+  "model": "CatBoost GPU",
+  "features": "domain interactions with native categorical handling",
+  "oof_rmse": 0.05610120070328288,
+  "fold_rmse": [
+    0.056249244715676314,
+    0.056139358492014235,
+    0.056156829401642454,
+    0.05600275727878506,
+    0.0559573054492074
+  ],
+  "best_iterations": [
+    2877,
+    2759,
+    2442,
+    2412,
+    3271
+  ],
+  "params": {
+    "loss_function": "RMSE",
+    "eval_metric": "RMSE",
+    "iterations": 3500,
+    "learning_rate": 0.035,
+    "depth": 8,
+    "l2_leaf_reg": 6.0,
+    "random_seed": 42,
+    "task_type": "GPU",
+    "devices": "0",
+    "verbose": 250,
+    "allow_writing_files": false
+  },
+  "cat_features": [
+    "road_type",
+    "lighting",
+    "weather",
+    "road_signs_present",
+    "public_road",
+    "time_of_day",
+    "holiday",
+    "school_season",
+    "speed_bin",
+    "curvature_bin",
+    "accident_bin",
+    "road_type__weather",
+    "road_type__lighting",
+    "road_type__time_of_day",
+    "road_type__speed_bin",
+    "road_type__accident_bin",
+    "weather__lighting",
+    "weather__time_of_day",
+    "lighting__time_of_day",
+    "holiday__school_season__time_of_day",
+    "road_signs_present__public_road",
+    "road_type__weather__lighting",
+    "road_type__curvature_bin__speed_bin",
+    "weather__lighting__accident_bin"
+  ],
+  "elapsed_seconds": 936.3370983000059
+}

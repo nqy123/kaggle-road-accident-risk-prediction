@@ -1,0 +1,2 @@
+competition,best_submission,public_score,private_score,oof_rmse,rank_estimate,notes
+playground-series-s5e10,outputs/submission_cat80_lgbm10_xgb10.csv,0.05563,0.05588,0.056087,"approx top 46% public leaderboard snapshot","Best current GPU blend; close to but not at top 20%"

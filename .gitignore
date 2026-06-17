@@ -1,0 +1,28 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Kaggle/raw/external data
+playground-series-s5e10/
+external/
+*.zip
+*.ipynb
+
+# Temporary leaderboard
+outputs/leaderboard/
+
+# Keep final reproducible outputs
+!outputs/
+!outputs/submission_cat80_lgbm10_xgb10.csv
+!outputs/oof_cat_gpu_fe.csv
+!outputs/pred_cat_gpu_fe.csv
+!outputs/cat_gpu_fe_summary.json
+!outputs/oof_lgbm_gpu_fe.csv
+!outputs/pred_lgbm_gpu_fe.csv
+!outputs/lgbm_gpu_fe_summary.json
+!outputs/oof_xgb_gpu_fe_short.csv
+!outputs/pred_xgb_gpu_fe_short.csv
+!outputs/xgb_gpu_fe_short_summary.json
+!outputs/experiment_log.csv
+!outputs/best_result_summary.csv
